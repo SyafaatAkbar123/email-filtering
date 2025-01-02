@@ -28,7 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(dataFrame['text'], dataFrame
 print(f"Data Train: {len(X_train)}")
 print(f"Data Test: {len(X_test)}\n")
 
-# 4. Vectorization 
+# 4. Vectorization  
 from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer()
 X_train_vect = vectorizer.fit_transform(X_train) # Fit and transform

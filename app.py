@@ -33,7 +33,7 @@ async def root(contact: Contact):
   import re
   message = re.sub(r'[^a-z\s]', '', message)
   
-  # 7. Load Model and Vector
+  # 7. Load Model and Vector 
   from joblib import load
   vector = load("model/vector.pkl")
   model = load("model/spam-nonspam-model.pkl")
